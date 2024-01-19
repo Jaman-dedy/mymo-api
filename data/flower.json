@@ -1,0 +1,148 @@
+[
+  {
+    "pictures": [
+      {
+        "id": "2dfb059d-db77-44a6-bbee-97075204aa3b",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/Premium_Elegant_Dark.jpg"
+      },
+      {
+        "id": "36bfd9e8-3605-486b-adb3-9e8c4eadae4b",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FS08_015M_a.jpg"
+      },
+      {
+        "id": "40179f7d-04aa-411c-9ff0-f9bfa746f8a2",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/W080146M_a.jpg"
+      }
+    ],
+    "previous": "eb88e80d-c5c5-4300-83b1-ea7c7f33672f",
+    "oldId": 268,
+    "rating": 4,
+    "createdAt": 1643301905748,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905748,
+    "category": "flower",
+    "funeralPlan": ["simple"],
+    "price": 361.3445,
+    "id": "c0dfd1e6-90e4-4202-b299-fd5e9aebf0f5",
+    "translations": {
+      "name": "Klassischer Trauerkranz und Trauergesteck",
+      "description": "- Diese Zusammenstellung von edler Floristik gibt jeder Trauerfeier einen schönen und eleganten Rahmen \n- Das Zusammenspiel von roten Rosen und weißen Nelken vermitteln eine elegante Stimmung\n- Auf Wunsch kann der Kranz auch gerne mit einer personalisierbaren Schleife versehen werden (Details werden nach der Bestellung gemeinsam abgestimmt)\n- Bitte beachten Sie, dass die Blumenauswahl saisonal und nach regionalen Besonderheiten leicht abweichen kann",
+      "locale": "de",
+      "shortname": "Üppiges Urnen-Blumenset in rot und weiß",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "seo_claim": "",
+        "number": "0024",
+        "material": "Rosen, Nelken",
+        "color": "rot, weiß",
+        "size": "",
+        "weight": "",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "04ad92e9-ff9b-403a-8b5b-82e2470f3e79",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB14_006M_a.jpg"
+      }
+    ],
+    "previous": "f710a7f6-19d5-4210-8876-59a5a4f12d2b",
+    "oldId": 218,
+    "rating": 0,
+    "createdAt": 1643301905532,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905532,
+    "category": "flower",
+    "funeralPlan": ["simple"],
+    "price": 150.0168,
+    "id": "70f94225-0da6-46cc-b02f-25974b8f4ac5",
+    "translations": {
+      "name": "Schönes Blumen-Arrangement in gedecktem rot und grün",
+      "description": "- Würdigen Sie einen geliebten Menschen mit diesem Strauß als letzten Begleiter\n- Üblicherweise enthält dieser Trauerstrauß Germini, Dianthus und dekoratives Bindegrün\n- Bitte beachten Sie, dass die Blumenauswahl saisonal und nach regionalen Besonderheiten leicht abweichen kann",
+      "locale": "de",
+      "shortname": "Trauerstrauß in rot",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "seo_claim": "",
+        "material": "Germini, Dianthus, Bindegrün",
+        "color": "rot, grün",
+        "number": "0023",
+        "size": "",
+        "weight": "",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "94de12bd-160e-422a-8cce-9e33713129e1",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB13_013M_a.jpg"
+      }
+    ],
+    "previous": "c471fc58-44f4-4936-9066-8539f57dc7a9",
+    "oldId": 226,
+    "rating": 0,
+    "createdAt": 1643301905622,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905622,
+    "category": "flower",
+    "funeralPlan": ["simple"],
+    "price": 77.0168,
+    "id": "d232dc79-8c03-44a6-ae33-7fcd2287692a",
+    "translations": {
+      "name": "Wunderschönes Blumen-Arrangement in hellen und warmen Farben",
+      "description": "- Drücken Sie mit diesem wunderschönen Trauerstrauß Ihre Trauer und Mitgefühl aus \n- Üblicherweise enthält dieser Strauß Blumen wie Nelken, Chrysanthemen und saisonales Bindegrün \n- Bitte beachten Sie, dass die Blumenauswahl saisonal und nach regionalen Besonderheiten leicht abweichen kann",
+      "locale": "de",
+      "shortname": "Klassischer Trauerstrauß",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "seo_claim": "",
+        "number": "1124",
+        "material": "Nelken, Chrysanthemen, Bindegrün",
+        "color": "diverse",
+        "size": "",
+        "weight": "",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "431a0eb6-74f4-4bdb-a85c-9dce17ab6047",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB13_025M_a.jpg"
+      }
+    ],
+    "previous": "7fe7ef3b-aaf9-4801-b592-2d371adc1c32",
+    "oldId": 222,
+    "rating": 0,
+    "createdAt": 1643301905607,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905607,
+    "category": "flower",
+    "funeralPlan": ["simple"],
+    "price": 99.0168,
+    "id": "89294faf-f7f8-4f9b-be2d-37a5cbad1f7c",
+    "translations": {
+      "name": "Eleganter Trauerstrauß mit Rosen in hellen Farben",
+      "description": "- Nehmen Sie Abschied von einem geliebten Menschen mit diesem wunderschönen und klassischem Trauerstrauß\n- Dieser Strauß enthält üblicherweise rosafarbene Rosen und saisonales Bindegrün\n- Bitte beachten Sie, dass die Blumenauswahl saisonal und nach regionalen Besonderheiten leicht abweichen kann",
+      "locale": "de",
+      "shortname": "Trauerstrauß mit rosa Rosen",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "seo_claim": "",
+        "number": "1123",
+        "material": "Rosen, Bindegrün",
+        "color": "rosa, grün",
+        "amount": ""
+      }
+    }
+  }
+]

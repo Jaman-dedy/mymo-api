@@ -4,6 +4,8 @@ import { Strategy, ExtractJwt, VerifiedCallback } from "passport-jwt";
 import swaggerUi from "swagger-ui-express";
 import * as swaggerDocument from "./swagger.json";
 
+import routes from "./routes";
+
 interface JwtPayload {
   sub: string;
 }
@@ -15,6 +17,9 @@ const jwtOptions = {
   jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
   secretOrKey: "your-secret-key",
 };
+
+app.use(express.json());
+app.use("/api", routes);
 
 passport.use(
   new Strategy(jwtOptions, (jwtPayload: JwtPayload, done: VerifiedCallback) => {

@@ -14,6 +14,7 @@ module.exports = {
     "prettier/prettier": "error",
     "import/extensions": [0],
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "import/prefer-default-export": ["off"],
   },
   env: {
     node: true,

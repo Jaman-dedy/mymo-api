@@ -1,0 +1,174 @@
+[
+  {
+    "pictures": [
+      {
+        "id": "3156dc29-14ad-4d63-9153-139ea95deb40",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_fullshot.jpg"
+      },
+      {
+        "id": "60efa05d-dfee-4cfc-8fb4-a188222ed632",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_mediumshot_flowers_open.jpg"
+      },
+      {
+        "id": "d895470d-da3d-47e7-9477-0d8c4d228e0e",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_mediumshot_flowers.jpg"
+      }
+    ],
+    "previous": "c537e806-cd8f-4b2f-a129-da4d7a7374c8",
+    "oldId": 276,
+    "rating": 3,
+    "createdAt": 1643301905804,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905805,
+    "category": "urn",
+    "funeralPlan": ["simple"],
+    "price": 350,
+    "id": "0d61e275-c2ca-4080-84b0-40cb86d8c49b",
+    "translations": {
+      "name": "Zeitlose Stahlurne mit grauer Hammerschlag-Optik",
+      "description": "- Diese klassische Stahlurne hat eine grau lackierte Oberfläche in Hammerschlag-Optik\n-  Sie ist ein Sinnbild für ehrliche Handwerkskunst in zeitlosem Design\n- Die schlichte Beschaffenheit dieser Urne strahlt Bescheidenheit und Unscheinbarkeit aus, wodurch sie zu einem wahren Klassiker wird\n- In Deutschland gefertigt\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Urne \"Everlast\"",
+      "properties": {
+        "certificate_1": "Made in Germany.jpg",
+        "certificate_2": "",
+        "number": "0018",
+        "seo_claim": "",
+        "material": "Stahl",
+        "color": "grau",
+        "size": "18x18x26cm",
+        "weight": "0,9kg",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "d8bd5236-e66d-48b0-84e1-f5c259493551",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_fullshot.jpg"
+      },
+      {
+        "id": "9d513b32-5968-40c7-944e-36a81b43874c",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_mediumshot_flowers_open.jpg"
+      },
+      {
+        "id": "bf09df3c-ec63-47fb-878d-f0055ff4f6b1",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_mediumshot_flowers.jpg"
+      }
+    ],
+    "previous": "48690ae6-74b4-4168-b9e2-851ac6f9db41",
+    "oldId": 282,
+    "rating": 3,
+    "createdAt": 1643301905848,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905848,
+    "category": "urn",
+    "funeralPlan": ["simple"],
+    "price": 767.2269,
+    "id": "b3800ac6-2b3e-48b2-aee6-0971177c8c60",
+    "translations": {
+      "name": "Matt schwarze Stahlurne mit goldenem Dekorstreifen",
+      "description": "- Diese Stahlurne hat eine matt schwarze Oberfläche\n- Ein umlaufender goldener Dekorstreifen vollendet das Erscheinungsbild dieses Modells\n- Die schlichte Beschaffenheit und die klassische Kombination aus den Farben Schwarz und Gold sorgen für die vollkommene Eleganz dieser Urne\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Urne \"Black Beauty\"",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "number": "0014",
+        "seo_claim": "",
+        "material": "Stahl",
+        "color": "schwarz",
+        "size": "19x19x26cm",
+        "weight": "0,9kg",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "2c255141-6400-4085-89af-83d62b019f71",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_fullshot.jpg"
+      },
+      {
+        "id": "a9f33ace-5eb2-40f4-b6a6-a2da59b07e04",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_stand.jpg"
+      },
+      {
+        "id": "00533869-8ab5-44ce-a325-7f390c3ab3b9",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_mediumshot_flowers.jpg"
+      }
+    ],
+    "previous": "09029c4d-571f-4543-829d-cb7326e82f6a",
+    "oldId": 421,
+    "rating": 4,
+    "createdAt": 1643301906077,
+    "funeralType": ["sea"],
+    "updatedAt": 1643301906077,
+    "category": "urn",
+    "funeralPlan": ["basic"],
+    "price": 175.6303,
+    "id": "9940d451-5cf8-481c-abdb-8ba8c4c3383f",
+    "translations": {
+      "name": "Blau-silberne Seeurne in Meeroptik",
+      "description": "- Die Seeurne ist aus einem wasserlöslichen Material\n- Die raue Oberfläche der Urne, gepaart mit der blau-silbernen Farbe erinnern an die stürmische See\n- Unsere Naturstoffurnen werden gänzlich aus biologisch abbaubarem Material gefertigt\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Seeurne \"Wilde See\"",
+      "properties": {
+        "certificate_1": "Made in Germany.jpg",
+        "certificate_2": "",
+        "seo_claim": "",
+        "number": "0020",
+        "material": "wasserlöslich (Anhydrit-Tonolith)",
+        "color": "blau, silber",
+        "size": "21x21x24cm",
+        "weight": "0,2kg",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "31a5e830-a726-433b-a5fc-a4641f9e38ab",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_fullshot.jpg"
+      },
+      {
+        "id": "b8e7f317-e7e1-464b-aaa4-4b4468eaf266",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_mediumshot_flowers_open.jpg"
+      },
+      {
+        "id": "41e4b7c5-7823-4cae-8fea-ade426fa7189",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_mediumshot_flowers.jpg"
+      }
+    ],
+    "previous": "b166aca6-de95-43f2-ad57-701289b5c1f3",
+    "oldId": 283,
+    "rating": 3,
+    "createdAt": 1643301905882,
+    "funeralType": ["cremation"],
+    "updatedAt": 1643301905882,
+    "category": "urn",
+    "funeralPlan": ["simple"],
+    "price": 284.0336,
+    "id": "51722886-4497-490a-9b68-87b8182d12d4",
+    "translations": {
+      "name": "Satinierte Cestalurne mit goldfarbener Rose",
+      "description": "- Diese Cestalurne hat eine satinierte Oberfläche \n- Die schöne Verzierung mit einer goldfarbenen Rose gibt dieser Urne ihre klassische Note \n- In Deutschland gefertigt\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Urne \"Goldene Rose\"",
+      "properties": {
+        "certificate_1": "Made in Germany.jpg",
+        "certificate_2": "",
+        "seo_claim": "",
+        "number": "0021",
+        "material": "Cestal",
+        "color": "silber, gold",
+        "size": "18x18,5x27cm",
+        "weight": "0,9kg",
+        "amount": ""
+      }
+    }
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "pictures": [
+      {
+        "id": "bf576392-40a8-4cc2-88d6-bd44908a9aab",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10019_coffin_fullshotfront.jpg"
+      },
+      {
+        "id": "605855f1-edda-4223-be48-7ce8d9287687",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10019_coffin_fullshot.jpg"
+      },
+      {
+        "id": "a61f1378-3474-4005-87f5-80bbb1479a6e",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10019_coffin_mediumshot_open.jpg"
+      },
+      {
+        "id": "3ac79b2c-316f-453a-b318-3769204355ff",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10019_coffin_mediumshottop.jpg"
+      }
+    ],
+    "previous": "ef395f57-56cb-4cc7-b8e6-a77167d4c261",
+    "oldId": 377,
+    "rating": 4,
+    "createdAt": 1643301905419,
+    "funeralType": ["burial"],
+    "updatedAt": 1643301905419,
+    "category": "coffin",
+    "funeralPlan": ["basic"],
+    "price": 937.8151,
+    "id": "1db1c8c8-5457-4c50-9cbd-316e33703b62",
+    "translations": {
+      "name": "Zimtbraunfarbener Kiefernsarg mit toller Maserung",
+      "description": "- Der Sarg besticht durch seine Klarheit und Schlichtheit gepaart mit einer deutlich herausstechenden natürlichen Maserung\n- Die Kiefer kommt in einem wundervollen Zimtbraunton, was ihm eine besondere Farbwärme verleiht\n- Passend dazu kommt der Sarg mit bronzierten Griffen aus Altkupfer\n- Ausgeschlagen wird der Sarg mit einfachem Leinenbezug und passendem weißen Lotband\n- Hergestellt in Deutschland\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Kiefernsarg \"Zimtmond\"",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "number": "0010",
+        "seo_claim": "Kiefernsarg »Thuban«",
+        "material": "Kiefer",
+        "color": "hellbraun",
+        "size": "200x67x64cm",
+        "weight": "40kg",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "0a5b028c-9e02-44cb-bd39-8485fc5b24e9",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10017_coffin_fullshotfront.jpg"
+      },
+      {
+        "id": "5e4146b5-520c-4cc0-8bee-ed139c1d85d4",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10017_coffin_fullshot.jpg"
+      },
+      {
+        "id": "2d8dfc27-205f-4f1b-900f-10efb997b657",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10017_coffin_mediumshot_open.jpg"
+      },
+      {
+        "id": "9836870f-7a91-4272-b09d-e9af6ccc2018",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10017_coffin_mediumshottop.jpg"
+      }
+    ],
+    "previous": "515b6a7a-6629-4187-8d86-d694bbc1b1ab",
+    "oldId": 16,
+    "rating": 3,
+    "createdAt": 1643301905416,
+    "funeralType": ["burial"],
+    "updatedAt": 1643301905416,
+    "category": "coffin",
+    "funeralPlan": ["simple"],
+    "price": 838.6555,
+    "id": "200b8f2d-fa30-41ac-8404-ecf949cb5568",
+    "translations": {
+      "name": "Zimtbraunfarbener Kiefernsarg mit toller Maserung",
+      "description": "- Der Sarg besticht durch seine Klarheit und Schlichtheit gepaart mit einer deutlich herausgearbeiteten natürlichen Maserung\n- Die Kiefer erscheint in einem wundervollen Zimtbraunton, was eine besondere Farbwärme verleiht\n- Passend dazu kommt der Sarg mit bronzierten Griffen aus Altkupfer\n- Ausgeschlagen wird der Sarg mit einfachem Leinenbezug mit passendem weißen Lotband\n- Hergestellt in Deutschland\n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Kiefernsarg \"Kräftige Güte\"",
+      "properties": {
+        "certificate_1": "",
+        "certificate_2": "",
+        "number": "0011",
+        "seo_claim": "Kiefernsarg »Regulus«",
+        "material": "Kiefer",
+        "color": "zimtbraun",
+        "size": "200x67x64cm",
+        "weight": "42kg",
+        "amount": ""
+      }
+    }
+  },
+  {
+    "pictures": [
+      {
+        "id": "61f12ec4-a46e-4270-9f30-5328accb46e6",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10002_coffin_fullshotfront.jpg"
+      },
+      {
+        "id": "b7000826-34dc-4e9a-ba16-3180f7a042d9",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10002_coffin_fullshot.jpg"
+      },
+      {
+        "id": "aa593316-c5fa-41d4-9665-b97d98b171ae",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10002_coffin_mediumshot_open.jpg"
+      },
+      {
+        "id": "dee7435b-7cab-485e-a47e-e8ea5045df67",
+        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/10002_coffin_mediumshottop.jpg"
+      }
+    ],
+    "previous": "49c156c2-5cf8-45b9-89a6-b84b5204096d",
+    "oldId": 1,
+    "rating": 4,
+    "createdAt": 1643301905367,
+    "funeralType": ["burial"],
+    "updatedAt": 1643301905367,
+    "category": "coffin",
+    "funeralPlan": ["simple"],
+    "price": 1006.7227,
+    "id": "c14cf67c-f916-40bc-8948-5ff6481a5c1c",
+    "translations": {
+      "name": "Natürlich vollendeter  Sarg aus feinster Pappel",
+      "description": "- Der Pappelsarg besticht durch seine äußerst schlichte Eleganz gepaart mit der Wärme des Bernsteintons\n- Gefertigt aus hochwertiger Pappel kommt der Sarg in einem zurückhaltend hellen Bernsteinton\n- Passend dazu kommt der Sarg in gleichfarbig gefrästen Holzgriffen\n- Ausgeschlagen wird der Sarg mit einer Baumwollbespannung inkl. feiner Spitzenbordüre \n- Die abgebildeten Blumen sind nicht Teil des Angebots",
+      "locale": "de",
+      "shortname": "Pappelsarg \"Feine Liebe\"",
+      "properties": {
+        "certificate_1": "Made in Germany.jpg",
+        "certificate_2": "",
+        "number": "0012",
+        "seo_claim": "Pappelsarg »Gatria«",
+        "material": "Pappel",
+        "color": "bernstein",
+        "size": "200x69x54cm",
+        "weight": "36kg",
+        "amount": ""
+      }
+    }
+  }
+]
