@@ -1,17 +1,13 @@
 import supertest from "supertest";
 import server from "../src/index";
 
-describe("App Endpoint Tests", () => {
-  afterAll((done) => {
-    server.close(() => done());
-    done();
-  });
+describe("Server tests", () => {
   it("should return a welcome message at the root endpoint", async () => {
     const response = await supertest(server)
       .get("/")
       .auth("admin", "password123");
     expect(response.status).toBe(200);
-    expect(response.body.message).toBe("Welcome to mymeoria api");
+    expect(response.body.message).toBe("Welcome to mymoria api");
   });
 
   it("should serve the Swagger UI at /api-docs endpoint", async () => {

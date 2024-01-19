@@ -2,10 +2,6 @@ import supertest from "supertest";
 import server from "../../src/index";
 
 describe("Product Controller Tests", () => {
-  afterAll((done) => {
-    server.close(() => done());
-    done();
-  });
   it("should get products by category", async () => {
     const response = await supertest(server)
       .get("/api/products/flower")

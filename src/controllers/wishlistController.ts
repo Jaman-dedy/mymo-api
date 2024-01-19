@@ -1,8 +1,6 @@
-// src/controllers/wishlistController.ts
 import { Request, Response } from "express";
 import { Wishlist } from "../types";
 
-// In-memory storage for a single wishlist
 const wishlist: Wishlist = {
   products: [],
 };
