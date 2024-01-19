@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "description": "API for fetching products by category"
   },
+  "securityDefinitions": {
+    "basicAuth": {
+      "type": "basic"
+    }
+  },
   "paths": {
     "/products/{category}": {
       "get": {
@@ -16,6 +21,11 @@
             "required": true,
             "type": "string",
             "description": "The category of products (coffin, urn, flower)"
+          }
+        ],
+        "security": [
+          {
+            "basicAuth": []
           }
         ],
         "responses": {
@@ -60,6 +70,11 @@
               }
             },
             "description": "The ID of the product to add to the wishlist"
+          }
+        ],
+        "security": [
+          {
+            "basicAuth": []
           }
         ],
         "responses": {
@@ -130,6 +145,11 @@
             "required": true,
             "type": "string",
             "description": "The ID of the product to remove from the wishlist"
+          }
+        ],
+        "security": [
+          {
+            "basicAuth": []
           }
         ],
         "responses": {
