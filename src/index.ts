@@ -17,7 +17,7 @@ app.use("/api", routes);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get("/", (req, res) => {
-  res.status(200).json({ message: "Hello, World!" });
+  res.status(200).json({ message: "Welcome to mymeoria api" });
 });
 
 app.listen(port, () => {
