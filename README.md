@@ -16,9 +16,6 @@ The MyMeoria API is a RESTful API that provides endpoints to manage funeral-rela
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Built With](#built-with)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Features
 
@@ -27,6 +24,7 @@ The MyMeoria API is a RESTful API that provides endpoints to manage funeral-rela
 - Remove items from the wishlist
 - Basic authentication for API access
 - Swagger documentation for API reference
+- Unit & integration tests
 
 ## Getting Started
 
@@ -100,9 +98,26 @@ npm run start:dev
 
 2. **With docker**
 
-put docker instructions here
+```bash
+- docker-compose up
+
+or in background 
+
+- docker-compose up -d
+
+stop the container with 
+
+- docker-compose down
+```
 
 ## API Documentation
+
+## Testing Credentials
+
+To test the application, use the following credentials:
+
+- **Username:** admin
+- **Password:** password123
 
 - [apiDoc](http://localhost:3000/api-docs)
 
