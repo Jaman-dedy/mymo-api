@@ -1,0 +1,32 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build output
+dist/
+
+# IDE/Editor specific files
+.vscode/
+*.code-workspace
+
+# npm lock file
+package-lock.json
+
+# Environment variables file
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Dependency directories
+.jest/
+
+# Output of 'npm pack'
+*.tgz
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

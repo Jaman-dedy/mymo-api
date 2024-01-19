@@ -1,0 +1,65 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Your API Documentation",
+      "description": "A simple RESTful API with Node.js, TypeScript, and Express"
+    },
+    "basePath": "/api",
+    "schemes": ["http", "https"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+      "/": {
+        "get": {
+          "summary": "Get a welcome message",
+          "responses": {
+            "200": {
+              "description": "Successful response",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "example": "Hello, World!"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/example": {
+        "post": {
+          "summary": "Create a new example",
+          "parameters": [
+            {
+              "name": "data",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Resource created successfully"
+            },
+            "400": {
+              "description": "Bad request"
+            }
+          }
+        }
+      }
+    }
+  }
+  
