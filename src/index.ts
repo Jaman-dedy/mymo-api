@@ -1,36 +1,17 @@
 import express from "express";
-import passport from "passport";
-import { Strategy, ExtractJwt, VerifiedCallback } from "passport-jwt";
 import swaggerUi from "swagger-ui-express";
+import authMiddleware from "./middleware/authMiddleware";
 import * as swaggerDocument from "./swagger.json";
 
 import routes from "./routes";
 
-interface JwtPayload {
-  sub: string;
-}
-
 const app = express();
 const port = 3000;
 
-const jwtOptions = {
-  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
-  secretOrKey: "your-secret-key",
-};
-
 app.use(express.json());
+app.use(authMiddleware);
 app.use("/api", routes);
 
-passport.use(
-  new Strategy(jwtOptions, (jwtPayload: JwtPayload, done: VerifiedCallback) => {
-    console.log("jwtPayload :>> ", jwtPayload);
-    console.log("done :>> ", done);
-    // Check if user exists and handle authentication logic
-    // Example: User.findById(jwtPayload.sub, (err, user) => { ... });
-  }),
-);
-
-app.use(passport.initialize());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.get("/", (req, res) => {
