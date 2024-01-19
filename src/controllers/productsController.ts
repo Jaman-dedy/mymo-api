@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { loadData } from "../dataLoader";
 import { Product } from "../types/index";
+import { CustomError } from "../types/customErrors";
 
 export const getProductsByCategory = (req: Request, res: Response): void => {
   try {
@@ -28,7 +29,6 @@ export const getProductsByCategory = (req: Request, res: Response): void => {
 
     res.status(200).json(products);
   } catch (error) {
-    console.error("Error fetching products:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    throw new CustomError("Internal Server Error", 500);
   }
 };
