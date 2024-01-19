@@ -1,65 +1,303 @@
 {
-    "swagger": "2.0",
-    "info": {
-      "version": "1.0.0",
-      "title": "Your API Documentation",
-      "description": "A simple RESTful API with Node.js, TypeScript, and Express"
+  "swagger": "2.0",
+  "info": {
+    "title": "Product API",
+    "version": "1.0.0",
+    "description": "API for fetching products by category"
+  },
+  "paths": {
+    "/products/{category}": {
+      "get": {
+        "summary": "Get products by category",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The category of products (coffin, urn, flower)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved products",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Product"
+              }
+            }
+          },
+          "404": {
+            "description": "Category not found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
     },
-    "basePath": "/api",
-    "schemes": ["http", "https"],
-    "consumes": ["application/json"],
-    "produces": ["application/json"],
-    "paths": {
-      "/": {
-        "get": {
-          "summary": "Get a welcome message",
-          "responses": {
-            "200": {
-              "description": "Successful response",
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "message": {
-                    "type": "string",
-                    "example": "Hello, World!"
-                  }
+    "/wishlist": {
+      "post": {
+        "summary": "Add a product to the wishlist",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "productId": {
+                  "type": "string"
                 }
               }
+            },
+            "description": "The ID of the product to add to the wishlist"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product added to the wishlist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "wishlist": {
+                  "$ref": "#/definitions/Wishlist"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
             }
           }
         }
       },
-      "/example": {
-        "post": {
-          "summary": "Create a new example",
-          "parameters": [
-            {
-              "name": "data",
-              "in": "body",
-              "required": true,
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
+      "get": {
+        "summary": "Get all wishlist items",
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved wishlist items",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "wishlistItems": {
+                  "type": "array",
+                  "items": {
                     "type": "string"
                   }
                 }
               }
             }
-          ],
-          "responses": {
-            "201": {
-              "description": "Resource created successfully"
-            },
-            "400": {
-              "description": "Bad request"
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/wishlist/{productId}": {
+      "delete": {
+        "summary": "Remove a product from the wishlist",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the product to remove from the wishlist"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Product removed from the wishlist",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "message": {
+                  "type": "string"
+                },
+                "wishlist": {
+                  "$ref": "#/definitions/Wishlist"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "404": {
+            "description": "Product not found in the wishlist",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error",
+            "schema": {
+              "$ref": "#/definitions/Error"
             }
           }
         }
       }
     }
+  },
+  "definitions": {
+    "Product": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The unique identifier of the product"
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the product"
+        },
+        "pictures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "The unique identifier of the picture"
+              },
+              "url": {
+                "type": "string",
+                "description": "The URL of the picture"
+              }
+            }
+          },
+          "description": "An array of pictures associated with the product"
+        },
+        "previous": {
+          "type": "string",
+          "description": "Previous version of the product"
+        },
+        "oldId": {
+          "type": "integer",
+          "description": "The old identifier of the product"
+        },
+        "rating": {
+          "type": "integer",
+          "description": "The rating of the product"
+        },
+        "createdAt": {
+          "type": "integer",
+          "description": "Timestamp indicating the creation time of the product"
+        },
+        "funeralType": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An array of funeral types associated with the product"
+        },
+        "updatedAt": {
+          "type": "integer",
+          "description": "Timestamp indicating the last update time of the product"
+        },
+        "category": {
+          "type": "string",
+          "description": "The category of the product (coffin, urn, flower)"
+        },
+        "funeralPlan": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An array of funeral plans associated with the product"
+        },
+        "price": {
+          "type": "number",
+          "description": "The price of the product"
+        },
+        "id": {
+          "type": "string",
+          "description": "The unique identifier of the product"
+        },
+        "translations": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "The translated name of the product"
+            },
+            "description": {
+              "type": "string",
+              "description": "The translated description of the product"
+            },
+            "locale": {
+              "type": "string",
+              "description": "The locale of the translation"
+            },
+            "shortname": {
+              "type": "string",
+              "description": "The translated shortname of the product"
+            },
+            "properties": {
+              "type": "object",
+              "properties": {
+              },
+              "description": "Translated properties of the product"
+            }
+          },
+          "description": "Translations for the product"
+        }
+      },
+      "description": "Details of a product"
+    },
+
+    "Wishlist": {
+      "type": "object",
+      "properties": {
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "An array of product IDs in the wishlist"
+        }
+      },
+      "description": "Details of a wishlist"
+    },
+    "Error": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "string",
+          "description": "Error message"
+        }
+      },
+      "description": "Error response"
+    }
   }
-  
+}
