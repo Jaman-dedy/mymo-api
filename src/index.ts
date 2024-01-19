@@ -1,4 +1,5 @@
 import express from "express";
+import http from "http";
 import swaggerUi from "swagger-ui-express";
 import authMiddleware from "./middleware/authMiddleware";
 import { globalErrorHandler } from "./middleware/errorHandler";
@@ -20,8 +21,14 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Welcome to mymeoria api" });
 });
 
-app.listen(port, () => {
+const server = http.createServer(app);
+
+const httpServer = server.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-export default app;
+// app.listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });
+
+export default httpServer;
