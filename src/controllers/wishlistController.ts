@@ -38,7 +38,6 @@ export const getAllWishlistItems = (_req: Request, res: Response): void => {
     res.status(200).json({ wishlistItems: wishlist.products });
   } catch (error) {
     console.error("Error getting wishlist items:", error);
-    res.status(500).json({ error: "Internal Server Error" });
   }
 };
 
@@ -47,7 +46,7 @@ export const removeFromWishlist = (req: Request, res: Response): void => {
     const { productId } = req.params;
 
     if (!productId) {
-      res.status(400).json({ error: "ProductId is required" });
+      res.status(404).json({ error: "ProductId is required" });
       return;
     }
     const index = wishlist.products.indexOf(productId);
@@ -63,6 +62,5 @@ export const removeFromWishlist = (req: Request, res: Response): void => {
       .json({ message: "Product removed from the wishlist", wishlist });
   } catch (error) {
     console.error("Error removing product from wishlist:", error);
-    res.status(500).json({ error: "Internal Server Error" });
   }
 };

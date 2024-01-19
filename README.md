@@ -123,6 +123,8 @@ To test the application, use the following credentials:
 
 ## Testing
 
+![image](https://github.com/Jaman-dedy/mymo-api/assets/46047244/83b05927-9f12-498e-be2d-25b491acc719)
+
 - npm run test
 - npm run test:coverage
 
