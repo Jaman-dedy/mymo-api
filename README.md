@@ -1,15 +1,73 @@
 # Mymoria-api-challenge
 
-This is a Node.js, TypeScript, and Express project that exposes an HTTP API to fetch products by category. The project uses three JSON files, each containing data for one of the categories: coffin, urn, and flower.
+## Overview
 
-## Prerequisites
+The MyMeoria API is a RESTful API that provides endpoints to manage funeral-related products, wishlists, and more.
 
-Before you begin, ensure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/) (v20 or higher)
-- [npm](https://www.npmjs.com/)
+## Table of Contents
+
+- [Features](#features)
+- [Project structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Server](#running-the-server)
+- [API Documentation](#api-documentation)
+- [Testing](#testing)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## Features
+
+- Fetch products by category (coffin, urn, flower)
+- Add and view products in a wishlist
+- Remove items from the wishlist
+- Basic authentication for API access
+- Swagger documentation for API reference
 
 ## Getting Started
+
+### Project structure
+
+- **src/:** Contains the source code of the application.
+  - **controllers/:** Handles route logic and interaction with models.
+  - **middleware/:** Includes middleware functions for request processing.
+  - **routes/:** Defines API routes.
+  - **types/:** Holds TypeScript type definitions.
+  - **index.ts:** Initializes and starts the server.
+
+- **test/:** Includes test files for unit testing.
+  - **controllers/:** Test suites for controller functions.
+  - **middleware/:** Test suites for middleware functions.
+functionality.
+  - **index.spec.ts:** Test suite for the main server file.
+
+- **.nyc_output/:** Output folder for code coverage.
+
+- **.gitignore:** Configuration file to specify files and directories ignored by Git.
+
+- **node_modules/:** Node.js modules installed by npm.
+
+- **package.json:** Manifest file containing metadata and dependencies.
+
+- **README.md:** Project documentation file.
+
+- **swagger.json:** Swagger API documentation configuration.
+
+- **tsconfig.json:** TypeScript compiler configuration.
+
+- **tslint.json:** TSLint configuration for code linting.
+
+
+### Prerequisites
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+- npm
+
+### Installation
 
 1. **Clone the Repository:**
 
@@ -31,58 +89,32 @@ npm install
 
 ```
 
-4. **Run the Application**
+## Running the Server
+
+1. **Locally**
 
 ```bash
-npm start
+npm run start:dev
 
 ```
 
-## API Endpoints
+2. **With docker**
 
-- Fetch Products by Category
+put docker instructions here
 
-```bash
-GET /api/products/:category
+## API Documentation
 
-```
+- [apiDoc](http://localhost:3000/api-docs)
 
-- Parameters
+## Testing
 
-`
-:category - The product category (coffin, urn, or flower).
-`
+- npm run test
+- npm run test:coverage
 
-- Example 
 
-```
-GET http://localhost:3000/api/products/coffin
+## Built with
 
-```
-
-## Project Structure
-
-your-project/
-|-- src/
-|   |-- controllers/
-|   |   |-- productsController.ts
-|   |-- routes/
-|   |   |-- productsRoutes.ts
-|   |-- index.ts
-|-- tests/
-|   |-- index.test.ts
-|-- swagger.json
-|-- .gitignore
-|-- docker-compose.yml
-|-- jest.config.js
-|-- tsconfig.json
-|-- package.json
-|-- README.md
-
-## Additional Information
-
-- Swagger Documentation
-
-`
-Swagger documentation is available at ```http://localhost:3000/api-docs``` when the application is running.
-`
+- [Express](https://expressjs.com/)
+- [Swagger](https://swagger.io/)
+- [Jest](https://jestjs.io/)
+- [Supertest](https://www.npmjs.com/package/supertest)
