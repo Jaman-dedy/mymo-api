@@ -1,6 +1,6 @@
 import basicAuth from "basic-auth";
-
 import { Request, Response, NextFunction } from "express";
+import logger from "../logger";
 
 interface User {
   name: string;
@@ -20,6 +20,10 @@ const authMiddleware = (req: Request, res: Response, next: NextFunction) => {
       message: "Invalid username or password",
     });
   }
+  logger.info(
+    `Authentication successful for username: ${users[user.name].name}`,
+    { service: "autService" },
+  );
   next();
 };
 
