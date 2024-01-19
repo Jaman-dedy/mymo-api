@@ -3,15 +3,15 @@
     "pictures": [
       {
         "id": "2dfb059d-db77-44a6-bbee-97075204aa3b",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/Premium_Elegant_Dark.jpg"
+        "url": "./assets/flower/Premium_Elegant_Dark.jpg"
       },
       {
         "id": "36bfd9e8-3605-486b-adb3-9e8c4eadae4b",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FS08_015M_a.jpg"
+        "url": "./assets/flower/FS08_015M_a.jpg"
       },
       {
         "id": "40179f7d-04aa-411c-9ff0-f9bfa746f8a2",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/W080146M_a.jpg"
+        "url": "./assets/flower/W080146M_a.jpg"
       }
     ],
     "previous": "eb88e80d-c5c5-4300-83b1-ea7c7f33672f",
@@ -46,7 +46,7 @@
     "pictures": [
       {
         "id": "04ad92e9-ff9b-403a-8b5b-82e2470f3e79",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB14_006M_a.jpg"
+        "url": "./assets/flower/FB14_006M_a.jpg"
       }
     ],
     "previous": "f710a7f6-19d5-4210-8876-59a5a4f12d2b",
@@ -81,7 +81,7 @@
     "pictures": [
       {
         "id": "94de12bd-160e-422a-8cce-9e33713129e1",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB13_013M_a.jpg"
+        "url": "./assets/flower/FB13_013M_a.jpg"
       }
     ],
     "previous": "c471fc58-44f4-4936-9066-8539f57dc7a9",
@@ -116,7 +116,7 @@
     "pictures": [
       {
         "id": "431a0eb6-74f4-4bdb-a85c-9dce17ab6047",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR_PATH/FB13_025M_a.jpg"
+        "url": "./assets/flower/FB13_025M_a.jpg"
       }
     ],
     "previous": "7fe7ef3b-aaf9-4801-b592-2d371adc1c32",

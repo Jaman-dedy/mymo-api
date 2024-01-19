@@ -37,3 +37,7 @@ export interface Product {
   id: string;
   translations: Translation;
 }
+
+export interface Wishlist {
+  products: string[];
+}

@@ -3,15 +3,15 @@
     "pictures": [
       {
         "id": "3156dc29-14ad-4d63-9153-139ea95deb40",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_fullshot.jpg"
+        "url": "./assets/urn/00001_urn_fullshot.jpg"
       },
       {
         "id": "60efa05d-dfee-4cfc-8fb4-a188222ed632",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_mediumshot_flowers_open.jpg"
+        "url": "./assets/urn/00001_urn_mediumshot_flowers_open.jpg"
       },
       {
         "id": "d895470d-da3d-47e7-9477-0d8c4d228e0e",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00001_urn_mediumshot_flowers.jpg"
+        "url": "./assets/urn/00001_urn_mediumshot_flowers.jpg"
       }
     ],
     "previous": "c537e806-cd8f-4b2f-a129-da4d7a7374c8",
@@ -46,15 +46,15 @@
     "pictures": [
       {
         "id": "d8bd5236-e66d-48b0-84e1-f5c259493551",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_fullshot.jpg"
+        "url": "./assets/urn/00007_urn_fullshot.jpg"
       },
       {
         "id": "9d513b32-5968-40c7-944e-36a81b43874c",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_mediumshot_flowers_open.jpg"
+        "url": "./assets/urn/00007_urn_mediumshot_flowers_open.jpg"
       },
       {
         "id": "bf09df3c-ec63-47fb-878d-f0055ff4f6b1",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00007_urn_mediumshot_flowers.jpg"
+        "url": "./assets/urn/00007_urn_mediumshot_flowers.jpg"
       }
     ],
     "previous": "48690ae6-74b4-4168-b9e2-851ac6f9db41",
@@ -89,15 +89,15 @@
     "pictures": [
       {
         "id": "2c255141-6400-4085-89af-83d62b019f71",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_fullshot.jpg"
+        "url": "./assets/urn/50086_urn_fullshot.jpg"
       },
       {
         "id": "a9f33ace-5eb2-40f4-b6a6-a2da59b07e04",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_stand.jpg"
+        "url": "./assets/urn/50086_urn_stand.jpg"
       },
       {
         "id": "00533869-8ab5-44ce-a325-7f390c3ab3b9",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/50086_urn_mediumshot_flowers.jpg"
+        "url": "./assets/urn/50086_urn_mediumshot_flowers.jpg"
       }
     ],
     "previous": "09029c4d-571f-4543-829d-cb7326e82f6a",
@@ -132,15 +132,15 @@
     "pictures": [
       {
         "id": "31a5e830-a726-433b-a5fc-a4641f9e38ab",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_fullshot.jpg"
+        "url": "./assets/urn/00008_urn_fullshot.jpg"
       },
       {
         "id": "b8e7f317-e7e1-464b-aaa4-4b4468eaf266",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_mediumshot_flowers_open.jpg"
+        "url": "./assets/urn/00008_urn_mediumshot_flowers_open.jpg"
       },
       {
         "id": "41e4b7c5-7823-4cae-8fea-ade426fa7189",
-        "url": "REPLACE_WITH_YOUR_ASSETS_DIR/00008_urn_mediumshot_flowers.jpg"
+        "url": "./assets/urn/00008_urn_mediumshot_flowers.jpg"
       }
     ],
     "previous": "b166aca6-de95-43f2-ad57-701289b5c1f3",
