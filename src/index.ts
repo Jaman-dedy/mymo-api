@@ -1,5 +1,6 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
+import cors from "cors";
 import authMiddleware from "./middleware/authMiddleware";
 import { globalErrorHandler } from "./middleware/errorHandler";
 import * as swaggerDocument from "./swagger.json";
@@ -9,6 +10,7 @@ import routes from "./routes";
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 app.use(authMiddleware);
 app.use(globalErrorHandler);
