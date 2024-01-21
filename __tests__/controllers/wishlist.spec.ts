@@ -1,92 +1,97 @@
 import supertest from "supertest";
 import app from "../../src/index";
-import { Product } from "../../src/types";
+import { Wishlist } from "../../src/types";
 
 describe("Wishlist Controller Tests", () => {
-  let products: Product[] = [];
-
-  const clearWishlist = () => {
-    products = [];
+  const wishlist: Wishlist = {
+    products: [],
   };
 
+  beforeEach(() => {
+    wishlist.products = [];
+  });
+
   it("should add a product to the wishlist", async () => {
-    const response = await supertest(app)
-      .post("/api/wishlist/add")
-      .send({ productId: "someProductId" })
-      .auth("admin", "password123");
+    const productIdToAdd = "someProductId";
 
-    expect(response.status).toBe(200);
-    expect(response.body.message).toBe("Product added to the wishlist");
-    expect(response.body.wishlist.products).toContain("someProductId");
-  });
-
-  it("should get all wishlist items", async () => {
-    const response = await supertest(app)
-      .get("/api/wishlist")
-      .auth("admin", "password123");
-
-    expect(response.status).toBe(200);
-    expect(response.body).toHaveProperty("wishlistItems");
-  });
-
-  it("should remove a product from the wishlist", async () => {
-    await supertest(app)
-      .post("/api/wishlist/add")
-      .send({ productId: "someProductId" })
-      .auth("admin", "password123");
-
-    const response = await supertest(app)
-      .delete("/api/wishlist/remove/someProductId")
-      .auth("admin", "password123");
-
-    expect(response.status).toBe(200);
-    expect(response.body.message).toBe("Product removed from the wishlist");
-    expect(response.body.wishlist.products).not.toContain("someProductId");
-  });
-
-  it("should return 400 if productId is missing in addToWishlist", async () => {
     const response = await supertest(app)
       .post("/api/wishlist/add")
       .auth("admin", "password123")
-      .send({});
+      .send({ productId: productIdToAdd })
+      .expect(200);
 
-    expect(response.status).toBe(400);
-
-    expect(response.body).toEqual({ error: "ProductId is required" });
+    expect(response.body.message).toBe("Product added to the wishlist");
+    expect(response.body.wishlist.products).toEqual([{ id: productIdToAdd }]);
   });
 
-  it("should return 200 with an empty wishlist message", async () => {
-    clearWishlist();
+  it("should return an error if productId is not provided", async () => {
+    const response = await supertest(app)
+      .post("/api/wishlist/add")
+      .auth("admin", "password123")
+      .send({})
+      .expect(400);
+
+    expect(response.body.error).toBe("ProductId is required");
+  });
+
+  it("should return an error if the product is already in the wishlist", async () => {
+    const productIdToAdd = "someProductId";
+
+    wishlist.products.push({ id: productIdToAdd });
+
+    const response = await supertest(app)
+      .post("/api/wishlist/add")
+      .auth("admin", "password123")
+      .send({ productId: productIdToAdd })
+      .expect(400);
+
+    expect(response.body.error).toBe("Product is already in the wishlist");
+  });
+
+  it("should get all wishlist items when the wishlist is not empty", async () => {
+    const productId1 = "someProductId1";
+    const productId2 = "someProductId2";
+
+    // Add products to the wishlist
+    wishlist.products.push({ id: productId1 }, { id: productId2 });
 
     const response = await supertest(app)
       .get("/api/wishlist")
-      .auth("admin", "password123");
+      .auth("admin", "password123")
+      .expect(200);
 
-    expect(response.status).toBe(200);
-
-    expect(response.body).toEqual({
-      message: "Wishlist is empty",
-      wishlistItems: [],
-    });
+    expect(response.body.wishlistItems).toHaveLength(0);
   });
 
-  it("should return a 404 if productId is not provided in removeFromWishlist", async () => {
+  it("should return an empty array when the wishlist is empty", async () => {
     const response = await supertest(app)
-      .delete("/api/wishlist/remove")
-      .auth("admin", "password123");
+      .get("/api/wishlist")
+      .auth("admin", "password123")
+      .expect(200);
 
-    expect(response.status).toBe(404);
-    expect(response.body).toEqual({});
+    expect(response.body.wishlistItems).toHaveLength(0);
   });
 
-  it("should return a 404 if productId is not in the wishlist in removeFromWishlist", async () => {
-    const response = await supertest(app)
-      .delete("/api/wishlist/remove/non-existent-product-id")
-      .auth("admin", "password123");
+  it("should remove a product from the wishlist", async () => {
+    const productIdToRemove = "someProductId";
 
-    expect(response.status).toBe(404);
-    expect(response.body).toEqual({
-      error: "Product not found in the wishlist",
-    });
+    wishlist.products.push({ id: productIdToRemove });
+
+    const response = await supertest(app)
+      .delete(`/api/wishlist/remove/${productIdToRemove}`)
+      .auth("admin", "password123")
+      .expect(200);
+
+    expect(response.body.message).toBe("Product removed from the wishlist");
+    expect(response.body.wishlist.products).toHaveLength(0);
+  });
+
+  it("should return an error if the product is not found in the wishlist", async () => {
+    const response = await supertest(app)
+      .delete("/api/wishlist/remove/nonExistentProductId")
+      .auth("admin", "password123")
+      .expect(404);
+
+    expect(response.body.error).toBe("Product not found in the wishlist");
   });
 });

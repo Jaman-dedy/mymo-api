@@ -1,5 +1,6 @@
 import express from "express";
 import swaggerUi from "swagger-ui-express";
+import helmet from "helmet";
 import cors from "cors";
 import authMiddleware from "./middleware/authMiddleware";
 import { globalErrorHandler } from "./middleware/errorHandler";
@@ -10,6 +11,7 @@ import routes from "./routes";
 const app = express();
 const port = process.env.PORT || 3000;
 
+app.use(helmet());
 app.use(cors());
 app.use(express.json());
 app.use(authMiddleware);

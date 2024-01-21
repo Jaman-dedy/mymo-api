@@ -38,6 +38,10 @@ export interface Product {
   translations: Translation;
 }
 
+export interface WishlistItem {
+  id: string;
+}
+
 export interface Wishlist {
-  products: string[];
+  products: WishlistItem[];
 }

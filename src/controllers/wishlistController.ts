@@ -1,15 +1,7 @@
 import { Request, Response } from "express";
-// import { Wishlist } from "../types";
+import { Wishlist } from "../types";
 import { Product } from "../types/index";
 import { loadData } from "../dataLoader";
-
-interface WishlistItem {
-  id: string;
-}
-
-interface Wishlist {
-  products: WishlistItem[];
-}
 
 const wishlist: Wishlist = {
   products: [],
